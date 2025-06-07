@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Fetches real-time market data from Angel One WebSocket and manages it in Google Sheets",
   "main": "run1.js",
-  "scripts": {
-    "start": "node keys.js && node 2tokens.js && node run1.js"
-  },
   "dependencies": {
     "axios": "",
     "smartapi-javascript": "",
