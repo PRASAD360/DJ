@@ -1,9 +1,9 @@
-name: Update Google Sheet with Current Time
+name: Install Dependencies
 on:
-  schedule:
-    - cron: '*/1 * * * *'  # Run every minute
+  push:
+    branches: [ main ]  # Trigger on push to main branch
 jobs:
-  update-time:
+  install:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -12,9 +12,6 @@ jobs:
         with:
           node-version: '20'
       - name: Install dependencies
-        run: npm install  # Installs dependencies from package.json
-      - name: Run script
-        env:
-          GOOGLE_SHEETS_CLIENT_EMAIL: ${{ secrets.GOOGLE_SHEETS_CLIENT_EMAIL }}
-          GOOGLE_SHEETS_PRIVATE_KEY: ${{ secrets.GOOGLE_SHEETS_PRIVATE_KEY }}
-        run: npm start  # Runs node script.js
+        run: npm install
+      - name: List installed dependencies
+        run: npm list
