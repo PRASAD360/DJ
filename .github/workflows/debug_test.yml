@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
   schedule:
-    - cron: '*/1 * * * *'  # Run every 1 minute
+   # - cron: '*/1 * * * *'  # Run every 1 minute
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false  # Avoid canceling overlapping jobs
