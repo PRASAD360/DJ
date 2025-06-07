@@ -4,7 +4,7 @@ on:
     branches: [ main ]
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'  # Every 5 minutes (adjust as needed)
+    - cron: '*/1 * * * *'  # Every 5 minutes (adjust as needed)
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
