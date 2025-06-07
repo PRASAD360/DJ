@@ -1,0 +1,33 @@
+name: Commit Node Modules to Repository
+on:
+  push:
+    branches: [ main ]
+jobs:
+  commit-node-modules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Check if node_modules exists
+        id: check-node-modules
+        run: |
+          if [ -d "node_modules" ]; then
+            echo "node_modules_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "node_modules_exists=false" >> $GITHUB_OUTPUT
+          fi
+      - name: Install dependencies
+        if: steps.check-node-modules.outputs.node_modules_exists == 'false'
+        run: npm install
+      - name: Commit node_modules to repository
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add node_modules
+          git commit -m "Add node_modules to repository" || echo "No changes to commit"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
