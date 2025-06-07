@@ -1,10 +1,8 @@
 name: install
 on:
+  workflow_dispatch:  # Trigger via webhook
   push:
     branches: [ main ]
-  workflow_dispatch:
-  schedule:
-    - cron: '*/1 * * * *'  # Every 5 minutes (adjust as needed)
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -19,13 +17,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Cache node_modules
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
       - name: Check if node_modules exists and is up-to-date
         id: check-node-modules
         run: |
@@ -37,7 +28,6 @@ jobs:
             echo "node_modules missing or outdated"
             echo "skip_install=false" >> $GITHUB_OUTPUT
           fi
-          cat $GITHUB_OUTPUT
       - name: Install dependencies
         if: steps.check-node-modules.outputs.skip_install == 'false'
         run: npm install
