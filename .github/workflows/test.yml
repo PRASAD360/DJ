@@ -1,16 +1,17 @@
 name: Debug Google Sheet Data
 on:
-  workflow_dispatch:  # Manual trigger for testing
+  workflow_dispatch:
   push:
     branches: [ main ]
- # schedule:
-   # - cron: '*/1 * * * *'  # Run every 1 minute
+  schedule:
+    - cron: '*/1 * * * *'  # Run every 1 minute
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false  # Avoid canceling overlapping jobs
+  cancel-in-progress: false
 jobs:
   debug-sheet:
     runs-on: ubuntu-latest
+    environment: gmail  # Replace 'prod' with your environment name
     steps:
       - uses: actions/checkout@v4
       - name: Set up Node.js
