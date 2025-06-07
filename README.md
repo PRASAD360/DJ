@@ -1,2 +1,1 @@
-# DJ
-For trading 
+
