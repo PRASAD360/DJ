@@ -2,18 +2,41 @@ name: install
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 jobs:
   commit-node-modules:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # Explicit token for checkout
+          token: ${{ secrets.PAT_TOKEN }}
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Check if package.json exists
+        id: check-package-json
+        run: |
+          if [ -f "package.json" ]; then
+            echo "package_json_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "package_json_exists=false" >> $GITHUB_OUTPUT
+          fi
+      - name: Fail if package.json is missing
+        if: steps.check-package-json.outputs.package_json_exists == 'false'
+        run: |
+          echo "Error: package.json is missing"
+          exit 1
+      - name: Check if node_modules exists
+        id: check-node-modules
+        run: |
+          if [ -d "node_modules" ]; then
+            echo "node_modules_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "node_modules_exists=false" >> $GITHUB_OUTPUT
+          fi
       - name: Install dependencies
+        if: steps.check-node-modules.outputs.node_modules_exists == 'false'
         run: npm install
       - name: Commit node_modules to repository
         run: |
@@ -21,4 +44,4 @@ jobs:
           git config --global user.email 'actions@github.com'
           git add node_modules
           git commit -m "Add node_modules to repository" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/PRASAD360/DJ.git main
+          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/PRASAD360/DJ.git main
