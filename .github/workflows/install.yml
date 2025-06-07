@@ -14,34 +14,20 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Check if package.json exists
-        id: check-package-json
-        run: |
-          if [ -f "package.json" ]; then
-            echo "package_json_exists=true" >> $GITHUB_OUTPUT
-          else
-            echo "package_json_exists=false" >> $GITHUB_OUTPUT
-          fi
-      - name: Fail if package.json is missing
-        if: steps.check-package-json.outputs.package_json_exists == 'false'
-        run: |
-          echo "Error: package.json is missing"
-          exit 1
-      - name: Check if node_modules exists
-        id: check-node-modules
-        run: |
-          if [ -d "node_modules" ]; then
-            echo "node_modules_exists=true" >> $GITHUB_OUTPUT
-          else
-            echo "node_modules_exists=false" >> $GITHUB_OUTPUT
-          fi
       - name: Install dependencies
-        if: steps.check-node-modules.outputs.node_modules_exists == 'false'
         run: npm install
-      - name: Commit node_modules to repository
+      - name: Create branch and commit node_modules
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
+          git checkout -b node-modules-branch
           git add node_modules
           git commit -m "Add node_modules to repository" || echo "No changes to commit"
-          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/PRASAD360/DJ.git main
+          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/PRASAD360/DJ.git node-modules-branch
+      - name: Create Pull Request
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/PRASAD360/DJ/pulls \
+            -d '{"title":"Add node_modules","head":"node-modules-branch","base":"main","body":"Auto-generated PR to add node_modules"}'
