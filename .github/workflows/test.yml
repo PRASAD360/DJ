@@ -3,7 +3,7 @@ on:
   workflow_dispatch:  # Manual trigger for testing
   push:
     branches: [ main ]
-  schedule:
+ # schedule:
    # - cron: '*/1 * * * *'  # Run every 1 minute
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
