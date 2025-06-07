@@ -17,6 +17,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Generate package-lock.json if missing
+        run: |
+          if [ ! -f "package-lock.json" ]; then
+            echo "package-lock.json missing, generating..."
+            npm install
+            git add package-lock.json
+            git commit -m "Generate package-lock.json" || echo "No changes to commit"
+            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/PRASAD360/DJ.git main
+          fi
       - name: Check if node_modules exists and is up-to-date
         id: check-node-modules
         run: |
@@ -30,7 +39,7 @@ jobs:
           fi
       - name: Install dependencies
         if: steps.check-node-modules.outputs.skip_install == 'false'
-        run: npm install
+        run: npm ci  # Use npm ci for consistent installs
       - name: Commit node_modules to repository
         run: |
           git config --global user.name 'GitHub Actions'
