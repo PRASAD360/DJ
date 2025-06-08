@@ -1,23 +1,33 @@
-name: 3.AOTOKENS
+name: 3.Instrument push
 on:
   workflow_dispatch:
-  push:
-    branches: [ main ]
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
+  schedule:
+    - cron: '0 0 * * *' # Daily at midnight UTC (~5:30 AM IST)
+permissions:
+  contents: write # Required to commit instruments.json
 jobs:
-  debug-sheet:
+  save-instruments:
     runs-on: ubuntu-latest
-    environment: gmail  # Replace 'prod' with your environment name
+    environment: gmail # Access GMAIL and PRIVATE_KEY
     steps:
       - uses: actions/checkout@v4
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Run test script
+      - name: Install Dependencies
+        run: npm install # Ensure googleapis is installed
+      - name: Run script to save instruments
         env:
           GMAIL: ${{ secrets.GMAIL }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-        run: node lib/tokendone.js
+        run: node lib/saveInstruments.js
+      - name: Commit instruments.json
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add instruments.json
+          git commit -m "Update instruments.json with latest scrip data" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }} # Use PAT_TOKEN for push
