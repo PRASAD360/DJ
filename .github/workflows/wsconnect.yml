@@ -7,7 +7,7 @@ jobs:
   dispatch:
     runs-on: ubuntu-latest
     environment: ao
-    timeout-minutes: .5 # 6 hours max for GitHub Actions
+    timeout-minutes: 0.5 # 6 hours max for GitHub Actions
     steps:
       - name: Checkout
         uses: actions/checkout@v4
