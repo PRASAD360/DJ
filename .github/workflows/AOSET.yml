@@ -1,15 +1,17 @@
-name: AOTOKENS
+name: Debug Sheet and Run WebSocket
 on:
   workflow_dispatch:
   push:
     branches: [ main ]
+  schedule:
+    - cron: '*/37 * * * *'
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 jobs:
-  debug-sheet:
+  debug:
     runs-on: ubuntu-latest
-    environment: gmail  # Replace 'prod' with your environment name
+    environment: gmail
     steps:
       - uses: actions/checkout@v4
       - name: Set up Node.js
@@ -20,14 +22,24 @@ jobs:
         env:
           GMAIL: ${{ secrets.GMAIL }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-        run: node lib/SetenvAO.js
-      - name: Set environment secrets
+        run: node lib/test.js
+  websocket:
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run WebSocket script
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          X_CLIENT_CODE: ${{ secrets.X_CLIENT_CODE }}
+          AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_FEED_TOKEN: ${{ secrets.X_FEED_TOKEN }}
+          DURATION: 20000
         run: |
-          gh secret set X_CLIENT_CODE -b "${{ steps.get-credentials.outputs.x_client_code }}" --env prod
-          gh secret set AUTHORIZATION -b "${{ steps.get-credentials.outputs.Authorization }}" --env prod
-          gh secret set X_API_KEY -b "${{ steps.get-credentials.outputs.x_api_key }}" --env prod
-          gh secret set X_FEED_TOKEN -b "${{ steps.get-credentials.outputs.x_feed_token }}" --env prod
-        shell: bash
-
+          for i in {1..10}; do
+            node websocket.js
+          done
