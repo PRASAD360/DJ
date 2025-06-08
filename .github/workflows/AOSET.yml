@@ -1,33 +1,22 @@
-name: Update Environment Secrets
+name: AOTOKENS
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *' # Daily at midnight UTC
-permissions:
-  actions: write
+  push:
+    branches: [ main ]
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
-  update-secrets:
+  debug-sheet:
     runs-on: ubuntu-latest
-    environment: prod
+    environment: gmail  # Replace 'prod' with your environment name
     steps:
       - uses: actions/checkout@v4
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Install Dependencies
-        run: npm install
-      - name: Debug environment variables
-        run: |
-          echo "GMAIL is set: ${GMAIL:+true}"
-          echo "PRIVATE_KEY is set: ${PRIVATE_KEY:+true}"
-          echo "GH_TOKEN is set: ${GH_TOKEN:+true}"
-        env:
-          GMAIL: ${{ secrets.GMAIL }}
-          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      - name: Run test script to get credentials
-        id: get-credentials
+      - name: Run test script
         env:
           GMAIL: ${{ secrets.GMAIL }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
@@ -41,3 +30,4 @@ jobs:
           gh secret set X_API_KEY -b "${{ steps.get-credentials.outputs.x_api_key }}" --env prod
           gh secret set X_FEED_TOKEN -b "${{ steps.get-credentials.outputs.x_feed_token }}" --env prod
         shell: bash
+
