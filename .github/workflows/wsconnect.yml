@@ -27,4 +27,4 @@ jobs:
           X_FEED_TOKEN: ${{ secrets.X_FEED_TOKEN }}
           GMAIL: ${{ secrets.GMAIL }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-        run: node app.js
+        run: node datasend.js
