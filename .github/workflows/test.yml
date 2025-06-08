@@ -1,23 +1,35 @@
-name: ANGELKEYS
+name: Update Environment Secret AO
 on:
-  workflow_dispatch:
-  push:
-    branches: [ main ]
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
+  workflow_dispatch: # Manual trigger
+  schedule:
+    - cron: '0 0 * * *' # Daily at midnight UTC
+permissions:
+  actions: write # Required for setting secrets
 jobs:
-  debug-sheet:
+  update-secrets:
     runs-on: ubuntu-latest
-    environment: gmail  # Replace 'prod' with your environment name
+    environment: prod
     steps:
       - uses: actions/checkout@v4
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Run test script
+      - name: Install Dependencies
+        run: npm install # Ensure googleapis is installed
+      - name: Run test script to get credentials
+        id: get-credentials
         env:
           GMAIL: ${{ secrets.GMAIL }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         run: node lib/test.js
+      - name: Set environment secrets
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          # Set each credential as a secret in the prod environment
+          gh secret set X_CLIENT_CODE -b "${{ steps.get-credentials.outputs.x_client_code }}" --env prod
+          gh secret set AUTHORIZATION -b "${{ steps.get-credentials.outputs.Authorization }}" --env prod
+          gh secret set X_API_KEY -b "${{ steps.get-credentials.outputs.x_api_key }}" --env prod
+          gh secret set X_FEED_TOKEN -b "${{ steps.get-credentials.outputs.x_feed_token }}" --env prod
+        shell: bash
