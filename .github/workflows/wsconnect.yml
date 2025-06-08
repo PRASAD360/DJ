@@ -26,7 +26,7 @@ jobs:
           X_FEED_TOKEN: ${{ secrets.X_FEED_TOKEN }}
         run: |
           echo "Running dispatch workflow..."
-          # Placeholder: Add your script (e.g., node lib/your_script.js)
+          node lib/WS.js
       - name: Commit changes
         run: |
           git config --global user.name 'GitHub Actions'
