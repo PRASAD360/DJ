@@ -27,4 +27,4 @@ jobs:
           GMAIL: ${{ secrets.GMAIL }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           RUN_DURATION_SECONDS: 0 # 0 for indefinite, e.g., 300 for 5 minutes
-        run: node app.js
+        run: node lib/datasend.js
