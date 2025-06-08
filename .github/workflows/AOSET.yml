@@ -25,7 +25,7 @@ jobs:
         run: node lib/SetenvAO.js
       - name: Set environment secrets
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           gh secret set X_CLIENT_CODE -b "${{ steps.get-credentials.outputs.x_client_code }}" --env ao
           gh secret set AUTHORIZATION -b "${{ steps.get-credentials.outputs.Authorization }}" --env ao
