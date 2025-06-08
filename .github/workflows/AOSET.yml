@@ -22,7 +22,7 @@ jobs:
         env:
           GMAIL: ${{ secrets.GMAIL }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-        run: node lib/test.js
+        run: node lib/SetenvAO.js
       - name: Set environment secrets
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
