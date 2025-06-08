@@ -1,10 +1,10 @@
-name: Update Environment Secret AO
+name: Update Environment Secrets
 on:
-  workflow_dispatch: # Manual trigger
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * *' # Daily at midnight UTC
 permissions:
-  actions: write # Required for setting secrets
+  actions: write
 jobs:
   update-secrets:
     runs-on: ubuntu-latest
@@ -16,7 +16,16 @@ jobs:
         with:
           node-version: '20'
       - name: Install Dependencies
-        run: npm install # Ensure googleapis is installed
+        run: npm install
+      - name: Debug environment variables
+        run: |
+          echo "GMAIL is set: ${GMAIL:+true}"
+          echo "PRIVATE_KEY is set: ${PRIVATE_KEY:+true}"
+          echo "GH_TOKEN is set: ${GH_TOKEN:+true}"
+        env:
+          GMAIL: ${{ secrets.GMAIL }}
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - name: Run test script to get credentials
         id: get-credentials
         env:
@@ -27,7 +36,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          # Set each credential as a secret in the prod environment
           gh secret set X_CLIENT_CODE -b "${{ steps.get-credentials.outputs.x_client_code }}" --env prod
           gh secret set AUTHORIZATION -b "${{ steps.get-credentials.outputs.Authorization }}" --env prod
           gh secret set X_API_KEY -b "${{ steps.get-credentials.outputs.x_api_key }}" --env prod
