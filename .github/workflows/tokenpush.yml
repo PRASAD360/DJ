@@ -25,7 +25,7 @@ jobs:
           GMAIL: ${{ secrets.GMAIL }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         run: |
-          node lib/saveInstruments.js
+          node lib/tokendone.js
           ls -la # List files to confirm instruments.json
       - name: Commit and push instruments.json
         run: |
