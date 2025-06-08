@@ -25,4 +25,4 @@ jobs:
           AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
           X_FEED_TOKEN: ${{ secrets.X_FEED_TOKEN }}
           RUN_DURATION_SECONDS: 0 # 0 for indefinite, e.g., 300 for 5 minutes
-        run: node lib/WS.js
+        run: node lib/datasend.js
