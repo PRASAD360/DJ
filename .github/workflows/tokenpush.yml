@@ -1,0 +1,23 @@
+name: Debug Google Sheet Data
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  debug-sheet:
+    runs-on: ubuntu-latest
+    environment: gmail  # Replace 'prod' with your environment name
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run test script
+        env:
+          GMAIL: ${{ secrets.GMAIL }}
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        run: node lib/tokendone.js
