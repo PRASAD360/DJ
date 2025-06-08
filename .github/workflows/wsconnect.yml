@@ -1,0 +1,36 @@
+name: Dispatch Workflow
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [trigger]
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    environment: ao
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install
+      - name: Run script
+        env:
+          AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_CLIENT_CODE: ${{ secrets.X_CLIENT_CODE }}
+          X_FEED_TOKEN: ${{ secrets.X_FEED_TOKEN }}
+        run: |
+          echo "Running dispatch workflow..."
+          # Placeholder: Add your script (e.g., node lib/your_script.js)
+      - name: Commit changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add .
+          git commit -m "Update from dispatch workflow" || echo "No changes"
+          git push origin main || echo "Push failed, consider PR"
