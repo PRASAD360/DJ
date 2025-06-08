@@ -1,15 +1,12 @@
-name: Debug Sheet and Run WebSocket
+name: Update Environment Secrets
 on:
-  workflow_dispatch:
-  push:
-    branches: [ main ]
+  workflow_dispatch: # Manual trigger
   schedule:
-    - cron: '*/37 * * * *'
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
+    - cron: '0 0 * * *' # Daily at midnight UTC
+permissions:
+  actions: write # Required for setting secrets
 jobs:
-  debug:
+  update-secrets:
     runs-on: ubuntu-latest
     environment: gmail
     steps:
@@ -18,28 +15,21 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Run test script
+      - name: Install Dependencies
+        run: npm install # Ensure googleapis is installed
+      - name: Run test script to get credentials
+        id: get-credentials
         env:
           GMAIL: ${{ secrets.GMAIL }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-        run: node lib/SetenvAO.js
-  websocket:
-    runs-on: ubuntu-latest
-    environment: AO
-    steps:
-      - uses: actions/checkout@v4
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - name: Run WebSocket script
-        env:
-          X_CLIENT_CODE: ${{ secrets.X_CLIENT_CODE }}
-          AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
-          X_API_KEY: ${{ secrets.X_API_KEY }}
-          X_FEED_TOKEN: ${{ secrets.X_FEED_TOKEN }}
-          DURATION: 20000
-        #run: |
-          #for i in {1..10}; do
-           # node websocket.js
-         # done
+        run: node lib/test.js
+      - name: Set environment secrets
+        env: AO
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          # Set each credential as a secret in the prod environment
+          gh secret set X_CLIENT_CODE -b "${{ steps.get-credentials.outputs.x_client_code }}" --env prod
+          gh secret set AUTHORIZATION -b "${{ steps.get-credentials.outputs.Authorization }}" --env prod
+          gh secret set X_API_KEY -b "${{ steps.get-credentials.outputs.x_api_key }}" --env prod
+          gh secret set X_FEED_TOKEN -b "${{ steps.get-credentials.outputs.x_feed_token }}" --env prod
+        shell: bash
