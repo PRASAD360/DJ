@@ -1,14 +1,14 @@
-name: 2setEnvironment Secrets
+name: 2.Set Environment Secrets
 on:
-  workflow_dispatch: # Manual trigger
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *' # Daily at midnight UTC
+    - cron: '0 0 * * *'
 permissions:
-  actions: write # Required for setting secrets
+  actions: write
 jobs:
   update-secrets:
     runs-on: ubuntu-latest
-    environment: gmail # Use gmail for GMAIL and PRIVATE_KEY
+    environment: gmail
     steps:
       - uses: actions/checkout@v4
       - name: Set up Node.js
@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '20'
       - name: Install Dependencies
-        run: npm install # Ensure googleapis is installed
+        run: npm install
       - name: Run test script to get credentials
         id: get-credentials
         env:
@@ -25,10 +25,10 @@ jobs:
         run: node lib/SetenvAO.js
       - name: Set environment secrets
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
-          gh secret set X_CLIENT_CODE -b "${{ steps.get-credentials.outputs.x_client_code }}" --env ao
-          gh secret set AUTHORIZATION -b "${{ steps.get-credentials.outputs.Authorization }}" --env ao
-          gh secret set X_API_KEY -b "${{ steps.get-credentials.outputs.x_api_key }}" --env ao
-          gh secret set X_FEED_TOKEN -b "${{ steps.get-credentials.outputs.x_feed_token }}" --env ao
+          gh secret set X_CLIENT_CODE -b "${{ steps.get-credentials.outputs.x_client_code }}" --env angel_secrets
+          gh secret set AUTHORIZATION -b "${{ steps.get-credentials.outputs.Authorization }}" --env angel_secrets
+          gh secret set X_API_KEY -b "${{ steps.get-credentials.outputs.x_api_key }}" --env angel_secrets
+          gh secret set X_FEED_TOKEN -b "${{ steps.get-credentials.outputs.x_feed_token }}" --env angel_secrets
         shell: bash
