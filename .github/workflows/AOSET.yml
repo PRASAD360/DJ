@@ -22,10 +22,10 @@ jobs:
         env:
           GMAIL: ${{ secrets.GMAIL }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-        run: node lib/test.js
+        run: node lib/SetenvAO.js
   websocket:
     runs-on: ubuntu-latest
-    environment: prod
+    environment: AO
     steps:
       - uses: actions/checkout@v4
       - name: Set up Node.js
@@ -39,7 +39,7 @@ jobs:
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_FEED_TOKEN: ${{ secrets.X_FEED_TOKEN }}
           DURATION: 20000
-        run: |
-          for i in {1..10}; do
-            node websocket.js
+        #run: |
+          #for i in {1..10}; do
+           # node websocket.js
           done
