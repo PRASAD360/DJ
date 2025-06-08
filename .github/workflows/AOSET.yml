@@ -8,7 +8,7 @@ permissions:
 jobs:
   update-secrets:
     runs-on: ubuntu-latest
-    environment: gmail
+    environment: gmail # Use gmail for GMAIL and PRIVATE_KEY
     steps:
       - uses: actions/checkout@v4
       - name: Set up Node.js
@@ -24,12 +24,11 @@ jobs:
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         run: node lib/SetenvAO.js
       - name: Set environment secrets
-        env: AO
+        env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          # Set each credential as a secret in the prod environment
-          gh secret set X_CLIENT_CODE -b "${{ steps.get-credentials.outputs.x_client_code }}" --env prod
-          gh secret set AUTHORIZATION -b "${{ steps.get-credentials.outputs.Authorization }}" --env prod
-          gh secret set X_API_KEY -b "${{ steps.get-credentials.outputs.x_api_key }}" --env prod
-          gh secret set X_FEED_TOKEN -b "${{ steps.get-credentials.outputs.x_feed_token }}" --env prod
+          gh secret set X_CLIENT_CODE -b "${{ steps.get-credentials.outputs.x_client_code }}" --env ao
+          gh secret set AUTHORIZATION -b "${{ steps.get-credentials.outputs.Authorization }}" --env ao
+          gh secret set X_API_KEY -b "${{ steps.get-credentials.outputs.x_api_key }}" --env ao
+          gh secret set X_FEED_TOKEN -b "${{ steps.get-credentials.outputs.x_feed_token }}" --env ao
         shell: bash
