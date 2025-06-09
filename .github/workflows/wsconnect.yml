@@ -24,5 +24,4 @@ jobs:
           X_API_KEY: ${{ secrets.X_API_KEY }}
           AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
           X_FEED_TOKEN: ${{ secrets.X_FEED_TOKEN }}
-        run: node lib/datasend.js
-      
+        run: node lib/WS.js
