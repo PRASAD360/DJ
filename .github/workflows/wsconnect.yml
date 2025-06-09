@@ -16,12 +16,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Install dependencies
+        run: npm install smartapi-javascript
       - name: Run WebSocket script
         env:
           X_CLIENT_CODE: ${{ secrets.X_CLIENT_CODE }}
           X_API_KEY: ${{ secrets.X_API_KEY }}
           AUTHORIZATION: ${{ secrets.AUTHORIZATION }}
           X_FEED_TOKEN: ${{ secrets.X_FEED_TOKEN }}
-          RUN_DURATION_SECONDS: 20 # 5 minutes for testing
-          SUBSCRIPTION_MODES: '[3]'
-        run: node lib/datasend.js
+        run: node lib/datasend.js &
+      
