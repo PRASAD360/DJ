@@ -28,4 +28,4 @@ jobs:
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           RUN_DURATION_SECONDS: 20 # 0 for indefinite (up to 6 hours)
           SHOW_PONG: false
-        run: node WS.js
+        run: node lib/WS.js
