@@ -13,6 +13,19 @@
     "exchangeType": "1"
   },
   {
+    "token": "57198",
+    "symbol": "NIFTY02JUN2626350CE",
+    "name": "NIFTY",
+    "expiry": "2026-06-02",
+    "strike": "26350",
+    "lotSize": "65",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
     "token": "57199",
     "symbol": "NIFTY02JUN2626350PE",
     "name": "NIFTY",
@@ -26,11 +39,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "57198",
-    "symbol": "NIFTY02JUN2626350CE",
+    "token": "57196",
+    "symbol": "NIFTY02JUN2626300CE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
-    "strike": "26350",
+    "strike": "26300",
     "lotSize": "65",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -52,19 +65,6 @@
     "exchangeType": "2"
   },
   {
-    "token": "57196",
-    "symbol": "NIFTY02JUN2626300CE",
-    "name": "NIFTY",
-    "expiry": "2026-06-02",
-    "strike": "26300",
-    "lotSize": "65",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
     "token": "57194",
     "symbol": "NIFTY02JUN2626250CE",
     "name": "NIFTY",
@@ -74,7 +74,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -87,12 +87,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
-    "token": "57192",
-    "symbol": "NIFTY02JUN2626200CE",
+    "token": "57193",
+    "symbol": "NIFTY02JUN2626200PE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "26200",
@@ -100,12 +100,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "57193",
-    "symbol": "NIFTY02JUN2626200PE",
+    "token": "57192",
+    "symbol": "NIFTY02JUN2626200CE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "26200",
@@ -139,12 +139,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "57188",
-    "symbol": "NIFTY02JUN2626100CE",
+    "token": "57189",
+    "symbol": "NIFTY02JUN2626100PE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "26100",
@@ -156,8 +156,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "57189",
-    "symbol": "NIFTY02JUN2626100PE",
+    "token": "57188",
+    "symbol": "NIFTY02JUN2626100CE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "26100",
@@ -191,20 +191,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "57182",
-    "symbol": "NIFTY02JUN2626000CE",
-    "name": "NIFTY",
-    "expiry": "2026-06-02",
-    "strike": "26000",
-    "lotSize": "65",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -221,11 +208,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "57180",
-    "symbol": "NIFTY02JUN2625950CE",
+    "token": "57182",
+    "symbol": "NIFTY02JUN2626000CE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
-    "strike": "25950",
+    "strike": "26000",
     "lotSize": "65",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -243,12 +230,25 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "57179",
-    "symbol": "NIFTY02JUN2625900PE",
+    "token": "57180",
+    "symbol": "NIFTY02JUN2625950CE",
+    "name": "NIFTY",
+    "expiry": "2026-06-02",
+    "strike": "25950",
+    "lotSize": "65",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "57178",
+    "symbol": "NIFTY02JUN2625900CE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "25900",
@@ -260,8 +260,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "57178",
-    "symbol": "NIFTY02JUN2625900CE",
+    "token": "57179",
+    "symbol": "NIFTY02JUN2625900PE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "25900",
@@ -295,7 +295,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -321,7 +321,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -351,6 +351,19 @@
     "exchangeType": "2"
   },
   {
+    "token": "57164",
+    "symbol": "NIFTY02JUN2625700CE",
+    "name": "NIFTY",
+    "expiry": "2026-06-02",
+    "strike": "25700",
+    "lotSize": "65",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
+    "exchangeType": "2"
+  },
+  {
     "token": "57165",
     "symbol": "NIFTY02JUN2625700PE",
     "name": "NIFTY",
@@ -364,11 +377,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "57164",
-    "symbol": "NIFTY02JUN2625700CE",
+    "token": "57163",
+    "symbol": "NIFTY02JUN2625650PE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
-    "strike": "25700",
+    "strike": "25650",
     "lotSize": "65",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -386,20 +399,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "57163",
-    "symbol": "NIFTY02JUN2625650PE",
-    "name": "NIFTY",
-    "expiry": "2026-06-02",
-    "strike": "25650",
-    "lotSize": "65",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -438,7 +438,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -455,8 +455,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "57145",
-    "symbol": "NIFTY02JUN2625500PE",
+    "token": "57144",
+    "symbol": "NIFTY02JUN2625500CE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "25500",
@@ -464,12 +464,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "57144",
-    "symbol": "NIFTY02JUN2625500CE",
+    "token": "57145",
+    "symbol": "NIFTY02JUN2625500PE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "25500",
@@ -507,8 +507,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "57137",
-    "symbol": "NIFTY02JUN2625400PE",
+    "token": "57136",
+    "symbol": "NIFTY02JUN2625400CE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "25400",
@@ -516,12 +516,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "57136",
-    "symbol": "NIFTY02JUN2625400CE",
+    "token": "57137",
+    "symbol": "NIFTY02JUN2625400PE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "25400",
@@ -555,12 +555,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "57132",
-    "symbol": "NIFTY02JUN2625300CE",
+    "token": "57133",
+    "symbol": "NIFTY02JUN2625300PE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "25300",
@@ -572,8 +572,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "57133",
-    "symbol": "NIFTY02JUN2625300PE",
+    "token": "57132",
+    "symbol": "NIFTY02JUN2625300CE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "25300",
@@ -607,7 +607,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -646,7 +646,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -659,15 +659,28 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
-    "token": "57039",
-    "symbol": "NIFTY02JUN2623700PE",
+    "token": "57038",
+    "symbol": "NIFTY02JUN2623700CE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "23700",
+    "lotSize": "65",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "57036",
+    "symbol": "NIFTY02JUN2623650CE",
+    "name": "NIFTY",
+    "expiry": "2026-06-02",
+    "strike": "23650",
     "lotSize": "65",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -689,19 +702,6 @@
     "exchangeType": "2"
   },
   {
-    "token": "57036",
-    "symbol": "NIFTY02JUN2623650CE",
-    "name": "NIFTY",
-    "expiry": "2026-06-02",
-    "strike": "23650",
-    "lotSize": "65",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
     "token": "57034",
     "symbol": "NIFTY02JUN2623600CE",
     "name": "NIFTY",
@@ -711,7 +711,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -724,7 +724,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -750,7 +750,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -763,7 +763,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -776,7 +776,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -789,7 +789,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -802,7 +802,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -815,7 +815,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -854,20 +854,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "57023",
-    "symbol": "NIFTY02JUN2623300PE",
-    "name": "NIFTY",
-    "expiry": "2026-06-02",
-    "strike": "23300",
-    "lotSize": "65",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -884,8 +871,21 @@
     "exchangeType": "2"
   },
   {
-    "token": "57020",
-    "symbol": "NIFTY02JUN2623250CE",
+    "token": "57023",
+    "symbol": "NIFTY02JUN2623300PE",
+    "name": "NIFTY",
+    "expiry": "2026-06-02",
+    "strike": "23300",
+    "lotSize": "65",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "57021",
+    "symbol": "NIFTY02JUN2623250PE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "23250",
@@ -897,8 +897,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "57021",
-    "symbol": "NIFTY02JUN2623250PE",
+    "token": "57020",
+    "symbol": "NIFTY02JUN2623250CE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "23250",
@@ -919,7 +919,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -958,20 +958,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "57014",
-    "symbol": "NIFTY02JUN2623100CE",
-    "name": "NIFTY",
-    "expiry": "2026-06-02",
-    "strike": "23100",
-    "lotSize": "65",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -985,6 +972,19 @@
     "exchange": "NFO",
     "segment": "5",
     "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "57014",
+    "symbol": "NIFTY02JUN2623100CE",
+    "name": "NIFTY",
+    "expiry": "2026-06-02",
+    "strike": "23100",
+    "lotSize": "65",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -1049,7 +1049,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -1058,6 +1058,19 @@
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "22950",
+    "lotSize": "65",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "57007",
+    "symbol": "NIFTY02JUN2622900PE",
+    "name": "NIFTY",
+    "expiry": "2026-06-02",
+    "strike": "22900",
     "lotSize": "65",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -1079,11 +1092,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "57007",
-    "symbol": "NIFTY02JUN2622900PE",
+    "token": "57005",
+    "symbol": "NIFTY02JUN2622850PE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
-    "strike": "22900",
+    "strike": "22850",
     "lotSize": "65",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -1094,19 +1107,6 @@
   {
     "token": "57004",
     "symbol": "NIFTY02JUN2622850CE",
-    "name": "NIFTY",
-    "expiry": "2026-06-02",
-    "strike": "22850",
-    "lotSize": "65",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "57005",
-    "symbol": "NIFTY02JUN2622850PE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "22850",
@@ -1127,7 +1127,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -1136,6 +1136,19 @@
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "22800",
+    "lotSize": "65",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "56991",
+    "symbol": "NIFTY02JUN2622750PE",
+    "name": "NIFTY",
+    "expiry": "2026-06-02",
+    "strike": "22750",
     "lotSize": "65",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -1153,20 +1166,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "56991",
-    "symbol": "NIFTY02JUN2622750PE",
-    "name": "NIFTY",
-    "expiry": "2026-06-02",
-    "strike": "22750",
-    "lotSize": "65",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -1192,12 +1192,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
-    "token": "56986",
-    "symbol": "NIFTY02JUN2622650CE",
+    "token": "56987",
+    "symbol": "NIFTY02JUN2622650PE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "22650",
@@ -1205,12 +1205,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "56987",
-    "symbol": "NIFTY02JUN2622650PE",
+    "token": "56986",
+    "symbol": "NIFTY02JUN2622650CE",
     "name": "NIFTY",
     "expiry": "2026-06-02",
     "strike": "22650",
@@ -1257,7 +1257,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -1270,7 +1270,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -1283,7 +1283,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -1296,7 +1296,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -1309,7 +1309,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -1322,7 +1322,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -1339,19 +1339,6 @@
     "exchangeType": "1"
   },
   {
-    "token": "57815",
-    "symbol": "BANKNIFTY30JUN2669000PE",
-    "name": "BANKNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "69000",
-    "lotSize": "30",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
     "token": "57812",
     "symbol": "BANKNIFTY30JUN2669000CE",
     "name": "BANKNIFTY",
@@ -1362,6 +1349,19 @@
     "exchange": "NFO",
     "segment": "5",
     "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "57815",
+    "symbol": "BANKNIFTY30JUN2669000PE",
+    "name": "BANKNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "69000",
+    "lotSize": "30",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -1387,7 +1387,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -1426,7 +1426,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -1435,19 +1435,6 @@
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
     "strike": "65000",
-    "lotSize": "30",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "57775",
-    "symbol": "BANKNIFTY30JUN2664500PE",
-    "name": "BANKNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "64500",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -1469,16 +1456,16 @@
     "exchangeType": "2"
   },
   {
-    "token": "75943",
-    "symbol": "BANKNIFTY30JUN2664000CE",
+    "token": "57775",
+    "symbol": "BANKNIFTY30JUN2664500PE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
-    "strike": "64000",
+    "strike": "64500",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -1495,6 +1482,19 @@
     "exchangeType": "2"
   },
   {
+    "token": "75943",
+    "symbol": "BANKNIFTY30JUN2664000CE",
+    "name": "BANKNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "64000",
+    "lotSize": "30",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
     "token": "75933",
     "symbol": "BANKNIFTY30JUN2663500CE",
     "name": "BANKNIFTY",
@@ -1504,7 +1504,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -1517,7 +1517,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -1530,7 +1530,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -1547,19 +1547,6 @@
     "exchangeType": "2"
   },
   {
-    "token": "75915",
-    "symbol": "BANKNIFTY30JUN2662900CE",
-    "name": "BANKNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "62900",
-    "lotSize": "30",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
     "token": "75918",
     "symbol": "BANKNIFTY30JUN2662900PE",
     "name": "BANKNIFTY",
@@ -1573,11 +1560,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "75913",
-    "symbol": "BANKNIFTY30JUN2662800CE",
+    "token": "75915",
+    "symbol": "BANKNIFTY30JUN2662900CE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
-    "strike": "62800",
+    "strike": "62900",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -1599,6 +1586,19 @@
     "exchangeType": "2"
   },
   {
+    "token": "75913",
+    "symbol": "BANKNIFTY30JUN2662800CE",
+    "name": "BANKNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "62800",
+    "lotSize": "30",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
     "token": "75912",
     "symbol": "BANKNIFTY30JUN2662700PE",
     "name": "BANKNIFTY",
@@ -1608,7 +1608,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -1617,6 +1617,19 @@
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
     "strike": "62700",
+    "lotSize": "30",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "75910",
+    "symbol": "BANKNIFTY30JUN2662600PE",
+    "name": "BANKNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "62600",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -1634,33 +1647,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "75910",
-    "symbol": "BANKNIFTY30JUN2662600PE",
-    "name": "BANKNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "62600",
-    "lotSize": "30",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "75908",
-    "symbol": "BANKNIFTY30JUN2662500PE",
-    "name": "BANKNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "62500",
-    "lotSize": "30",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -1673,15 +1660,15 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "75905",
-    "symbol": "BANKNIFTY30JUN2662400CE",
+    "token": "75908",
+    "symbol": "BANKNIFTY30JUN2662500PE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
-    "strike": "62400",
+    "strike": "62500",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -1703,8 +1690,34 @@
     "exchangeType": "2"
   },
   {
+    "token": "75905",
+    "symbol": "BANKNIFTY30JUN2662400CE",
+    "name": "BANKNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "62400",
+    "lotSize": "30",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
     "token": "75903",
     "symbol": "BANKNIFTY30JUN2662300CE",
+    "name": "BANKNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "62300",
+    "lotSize": "30",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "75904",
+    "symbol": "BANKNIFTY30JUN2662300PE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
     "strike": "62300",
@@ -1716,11 +1729,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "75904",
-    "symbol": "BANKNIFTY30JUN2662300PE",
+    "token": "75901",
+    "symbol": "BANKNIFTY30JUN2662200CE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
-    "strike": "62300",
+    "strike": "62200",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -1742,11 +1755,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "75901",
-    "symbol": "BANKNIFTY30JUN2662200CE",
+    "token": "75900",
+    "symbol": "BANKNIFTY30JUN2662100PE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
-    "strike": "62200",
+    "strike": "62100",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -1768,11 +1781,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "75900",
-    "symbol": "BANKNIFTY30JUN2662100PE",
+    "token": "75898",
+    "symbol": "BANKNIFTY30JUN2662000PE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
-    "strike": "62100",
+    "strike": "62000",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -1794,21 +1807,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "75898",
-    "symbol": "BANKNIFTY30JUN2662000PE",
-    "name": "BANKNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "62000",
-    "lotSize": "30",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "75896",
-    "symbol": "BANKNIFTY30JUN2661900PE",
+    "token": "75895",
+    "symbol": "BANKNIFTY30JUN2661900CE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
     "strike": "61900",
@@ -1816,12 +1816,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "75895",
-    "symbol": "BANKNIFTY30JUN2661900CE",
+    "token": "75896",
+    "symbol": "BANKNIFTY30JUN2661900PE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
     "strike": "61900",
@@ -1842,7 +1842,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -1851,19 +1851,6 @@
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
     "strike": "61800",
-    "lotSize": "30",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "75891",
-    "symbol": "BANKNIFTY30JUN2661700CE",
-    "name": "BANKNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "61700",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -1885,16 +1872,16 @@
     "exchangeType": "2"
   },
   {
-    "token": "75889",
-    "symbol": "BANKNIFTY30JUN2661600CE",
+    "token": "75891",
+    "symbol": "BANKNIFTY30JUN2661700CE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
-    "strike": "61600",
+    "strike": "61700",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -1911,8 +1898,21 @@
     "exchangeType": "2"
   },
   {
-    "token": "57758",
-    "symbol": "BANKNIFTY30JUN2661500CE",
+    "token": "75889",
+    "symbol": "BANKNIFTY30JUN2661600CE",
+    "name": "BANKNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "61600",
+    "lotSize": "30",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "57760",
+    "symbol": "BANKNIFTY30JUN2661500PE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
     "strike": "61500",
@@ -1920,12 +1920,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
-    "token": "57760",
-    "symbol": "BANKNIFTY30JUN2661500PE",
+    "token": "57758",
+    "symbol": "BANKNIFTY30JUN2661500CE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
     "strike": "61500",
@@ -1946,7 +1946,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -1959,7 +1959,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -1972,7 +1972,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -1989,11 +1989,24 @@
     "exchangeType": "2"
   },
   {
-    "token": "75584",
-    "symbol": "BANKNIFTY30JUN2654200CE",
+    "token": "75585",
+    "symbol": "BANKNIFTY30JUN2654200PE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
     "strike": "54200",
+    "lotSize": "30",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "75583",
+    "symbol": "BANKNIFTY30JUN2654100PE",
+    "name": "BANKNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "54100",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -2011,32 +2024,6 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "75583",
-    "symbol": "BANKNIFTY30JUN2654100PE",
-    "name": "BANKNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "54100",
-    "lotSize": "30",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "57719",
-    "symbol": "BANKNIFTY30JUN2654000CE",
-    "name": "BANKNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "54000",
-    "lotSize": "30",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
     "option type": "PE",
     "exchangeType": "2"
   },
@@ -2050,15 +2037,15 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "75581",
-    "symbol": "BANKNIFTY30JUN2653900PE",
+    "token": "57719",
+    "symbol": "BANKNIFTY30JUN2654000CE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
-    "strike": "53900",
+    "strike": "54000",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -2076,7 +2063,20 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "75581",
+    "symbol": "BANKNIFTY30JUN2653900PE",
+    "name": "BANKNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "53900",
+    "lotSize": "30",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -2128,7 +2128,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -2141,7 +2141,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -2150,19 +2150,6 @@
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
     "strike": "53600",
-    "lotSize": "30",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "75569",
-    "symbol": "BANKNIFTY30JUN2653500CE",
-    "name": "BANKNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "53500",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -2184,6 +2171,19 @@
     "exchangeType": "2"
   },
   {
+    "token": "75569",
+    "symbol": "BANKNIFTY30JUN2653500CE",
+    "name": "BANKNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "53500",
+    "lotSize": "30",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
     "token": "75567",
     "symbol": "BANKNIFTY30JUN2653400CE",
     "name": "BANKNIFTY",
@@ -2193,7 +2193,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -2219,7 +2219,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -2232,7 +2232,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -2258,7 +2258,20 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "75550",
+    "symbol": "BANKNIFTY30JUN2653100CE",
+    "name": "BANKNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "53100",
+    "lotSize": "30",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -2271,15 +2284,15 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
-    "token": "75550",
-    "symbol": "BANKNIFTY30JUN2653100CE",
+    "token": "75549",
+    "symbol": "BANKNIFTY30JUN2653000PE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
-    "strike": "53100",
+    "strike": "53000",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -2301,16 +2314,16 @@
     "exchangeType": "2"
   },
   {
-    "token": "75549",
-    "symbol": "BANKNIFTY30JUN2653000PE",
+    "token": "75467",
+    "symbol": "BANKNIFTY30JUN2652900CE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
-    "strike": "53000",
+    "strike": "52900",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -2324,19 +2337,6 @@
     "exchange": "NFO",
     "segment": "5",
     "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "75467",
-    "symbol": "BANKNIFTY30JUN2652900CE",
-    "name": "BANKNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "52900",
-    "lotSize": "30",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -2362,20 +2362,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "75464",
-    "symbol": "BANKNIFTY30JUN2652700PE",
-    "name": "BANKNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "52700",
-    "lotSize": "30",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -2392,11 +2379,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "75462",
-    "symbol": "BANKNIFTY30JUN2652600PE",
+    "token": "75464",
+    "symbol": "BANKNIFTY30JUN2652700PE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
-    "strike": "52600",
+    "strike": "52700",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -2418,11 +2405,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "57718",
-    "symbol": "BANKNIFTY30JUN2652500PE",
+    "token": "75462",
+    "symbol": "BANKNIFTY30JUN2652600PE",
     "name": "BANKNIFTY",
     "expiry": "2026-06-30",
-    "strike": "52500",
+    "strike": "52600",
     "lotSize": "30",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -2444,6 +2431,19 @@
     "exchangeType": "2"
   },
   {
+    "token": "57718",
+    "symbol": "BANKNIFTY30JUN2652500PE",
+    "name": "BANKNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "52500",
+    "lotSize": "30",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
+    "exchangeType": "2"
+  },
+  {
     "token": "75460",
     "symbol": "BANKNIFTY30JUN2652400PE",
     "name": "BANKNIFTY",
@@ -2453,7 +2453,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -2466,7 +2466,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -2479,7 +2479,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -2544,7 +2544,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -2557,7 +2557,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -2596,7 +2596,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -2635,7 +2635,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -2665,19 +2665,6 @@
     "exchangeType": "1"
   },
   {
-    "token": "77690",
-    "symbol": "FINNIFTY30JUN2630000CE",
-    "name": "FINNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "30000",
-    "lotSize": "60",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
     "token": "77691",
     "symbol": "FINNIFTY30JUN2630000PE",
     "name": "FINNIFTY",
@@ -2691,11 +2678,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "77688",
-    "symbol": "FINNIFTY30JUN2629500CE",
+    "token": "77690",
+    "symbol": "FINNIFTY30JUN2630000CE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
-    "strike": "29500",
+    "strike": "30000",
     "lotSize": "60",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -2717,6 +2704,19 @@
     "exchangeType": "2"
   },
   {
+    "token": "77688",
+    "symbol": "FINNIFTY30JUN2629500CE",
+    "name": "FINNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "29500",
+    "lotSize": "60",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
     "token": "77643",
     "symbol": "FINNIFTY30JUN2629000PE",
     "name": "FINNIFTY",
@@ -2726,7 +2726,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -2739,12 +2739,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
-    "token": "77641",
-    "symbol": "FINNIFTY30JUN2628900PE",
+    "token": "77640",
+    "symbol": "FINNIFTY30JUN2628900CE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
     "strike": "28900",
@@ -2752,12 +2752,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "77640",
-    "symbol": "FINNIFTY30JUN2628900CE",
+    "token": "77641",
+    "symbol": "FINNIFTY30JUN2628900PE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
     "strike": "28900",
@@ -2804,7 +2804,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -2817,7 +2817,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -2830,7 +2830,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -2843,12 +2843,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "77631",
-    "symbol": "FINNIFTY30JUN2628500CE",
+    "token": "77632",
+    "symbol": "FINNIFTY30JUN2628500PE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
     "strike": "28500",
@@ -2856,12 +2856,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "77632",
-    "symbol": "FINNIFTY30JUN2628500PE",
+    "token": "77631",
+    "symbol": "FINNIFTY30JUN2628500CE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
     "strike": "28500",
@@ -2895,7 +2895,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -2934,7 +2934,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -2947,7 +2947,20 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "77624",
+    "symbol": "FINNIFTY30JUN2628100PE",
+    "name": "FINNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "28100",
+    "lotSize": "60",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -2964,11 +2977,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "77624",
-    "symbol": "FINNIFTY30JUN2628100PE",
+    "token": "77607",
+    "symbol": "FINNIFTY30JUN2628000PE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
-    "strike": "28100",
+    "strike": "28000",
     "lotSize": "60",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -2987,19 +3000,6 @@
     "exchange": "NFO",
     "segment": "5",
     "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "77607",
-    "symbol": "FINNIFTY30JUN2628000PE",
-    "name": "FINNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "28000",
-    "lotSize": "60",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -3025,7 +3025,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -3038,7 +3038,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -3047,6 +3047,19 @@
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
     "strike": "27800",
+    "lotSize": "60",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "77600",
+    "symbol": "FINNIFTY30JUN2627700PE",
+    "name": "FINNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "27700",
     "lotSize": "60",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -3068,19 +3081,6 @@
     "exchangeType": "2"
   },
   {
-    "token": "77600",
-    "symbol": "FINNIFTY30JUN2627700PE",
-    "name": "FINNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "27700",
-    "lotSize": "60",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
     "token": "77595",
     "symbol": "FINNIFTY30JUN2627600PE",
     "name": "FINNIFTY",
@@ -3090,7 +3090,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -3103,7 +3103,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -3116,7 +3116,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -3133,19 +3133,6 @@
     "exchangeType": "2"
   },
   {
-    "token": "77582",
-    "symbol": "FINNIFTY30JUN2627400CE",
-    "name": "FINNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "27400",
-    "lotSize": "60",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
     "token": "77585",
     "symbol": "FINNIFTY30JUN2627400PE",
     "name": "FINNIFTY",
@@ -3159,11 +3146,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "77555",
-    "symbol": "FINNIFTY30JUN2627300CE",
+    "token": "77582",
+    "symbol": "FINNIFTY30JUN2627400CE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
-    "strike": "27300",
+    "strike": "27400",
     "lotSize": "60",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -3181,7 +3168,33 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
+    "option type": "CE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "77555",
+    "symbol": "FINNIFTY30JUN2627300CE",
+    "name": "FINNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "27300",
+    "lotSize": "60",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
     "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "77550",
+    "symbol": "FINNIFTY30JUN2627200PE",
+    "name": "FINNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "27200",
+    "lotSize": "60",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -3195,19 +3208,6 @@
     "exchange": "NFO",
     "segment": "5",
     "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "77550",
-    "symbol": "FINNIFTY30JUN2627200PE",
-    "name": "FINNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "27200",
-    "lotSize": "60",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -3233,19 +3233,6 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "77541",
-    "symbol": "FINNIFTY30JUN2627000CE",
-    "name": "FINNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "27000",
-    "lotSize": "60",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
     "option type": "PE",
     "exchangeType": "2"
   },
@@ -3263,11 +3250,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "77540",
-    "symbol": "FINNIFTY30JUN2626900PE",
+    "token": "77541",
+    "symbol": "FINNIFTY30JUN2627000CE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
-    "strike": "26900",
+    "strike": "27000",
     "lotSize": "60",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -3276,8 +3263,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "77537",
-    "symbol": "FINNIFTY30JUN2626900CE",
+    "token": "77540",
+    "symbol": "FINNIFTY30JUN2626900PE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
     "strike": "26900",
@@ -3289,11 +3276,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "77535",
-    "symbol": "FINNIFTY30JUN2626800CE",
+    "token": "77537",
+    "symbol": "FINNIFTY30JUN2626900CE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
-    "strike": "26800",
+    "strike": "26900",
     "lotSize": "60",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -3311,7 +3298,20 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "77535",
+    "symbol": "FINNIFTY30JUN2626800CE",
+    "name": "FINNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "26800",
+    "lotSize": "60",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -3328,6 +3328,19 @@
     "exchangeType": "2"
   },
   {
+    "token": "77496",
+    "symbol": "FINNIFTY30JUN2625000CE",
+    "name": "FINNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "25000",
+    "lotSize": "60",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
+    "exchangeType": "2"
+  },
+  {
     "token": "77497",
     "symbol": "FINNIFTY30JUN2625000PE",
     "name": "FINNIFTY",
@@ -3341,16 +3354,16 @@
     "exchangeType": "2"
   },
   {
-    "token": "77496",
-    "symbol": "FINNIFTY30JUN2625000CE",
+    "token": "77495",
+    "symbol": "FINNIFTY30JUN2624900PE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
-    "strike": "25000",
+    "strike": "24900",
     "lotSize": "60",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -3363,15 +3376,15 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
-    "token": "77495",
-    "symbol": "FINNIFTY30JUN2624900PE",
+    "token": "77493",
+    "symbol": "FINNIFTY30JUN2624800PE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
-    "strike": "24900",
+    "strike": "24800",
     "lotSize": "60",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -3389,20 +3402,20 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
-    "token": "77493",
-    "symbol": "FINNIFTY30JUN2624800PE",
+    "token": "77491",
+    "symbol": "FINNIFTY30JUN2624700PE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
-    "strike": "24800",
+    "strike": "24700",
     "lotSize": "60",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -3419,11 +3432,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "77491",
-    "symbol": "FINNIFTY30JUN2624700PE",
+    "token": "77488",
+    "symbol": "FINNIFTY30JUN2624600CE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
-    "strike": "24700",
+    "strike": "24600",
     "lotSize": "60",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -3432,8 +3445,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "77488",
-    "symbol": "FINNIFTY30JUN2624600CE",
+    "token": "77489",
+    "symbol": "FINNIFTY30JUN2624600PE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
     "strike": "24600",
@@ -3445,11 +3458,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "77489",
-    "symbol": "FINNIFTY30JUN2624600PE",
+    "token": "77486",
+    "symbol": "FINNIFTY30JUN2624500CE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
-    "strike": "24600",
+    "strike": "24500",
     "lotSize": "60",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -3471,19 +3484,6 @@
     "exchangeType": "2"
   },
   {
-    "token": "77486",
-    "symbol": "FINNIFTY30JUN2624500CE",
-    "name": "FINNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "24500",
-    "lotSize": "60",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
     "token": "77484",
     "symbol": "FINNIFTY30JUN2624400CE",
     "name": "FINNIFTY",
@@ -3493,7 +3493,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -3506,7 +3506,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -3519,7 +3519,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -3532,7 +3532,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -3558,7 +3558,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -3662,7 +3662,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -3688,7 +3688,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -3714,7 +3714,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -3740,7 +3740,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -3766,7 +3766,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -3779,7 +3779,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -3796,8 +3796,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "77458",
-    "symbol": "FINNIFTY30JUN2623200CE",
+    "token": "77459",
+    "symbol": "FINNIFTY30JUN2623200PE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
     "strike": "23200",
@@ -3805,12 +3805,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "77459",
-    "symbol": "FINNIFTY30JUN2623200PE",
+    "token": "77458",
+    "symbol": "FINNIFTY30JUN2623200CE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
     "strike": "23200",
@@ -3844,7 +3844,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -3874,8 +3874,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "77369",
-    "symbol": "FINNIFTY30JUN2622900PE",
+    "token": "77333",
+    "symbol": "FINNIFTY30JUN2622900CE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
     "strike": "22900",
@@ -3887,8 +3887,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "77333",
-    "symbol": "FINNIFTY30JUN2622900CE",
+    "token": "77369",
+    "symbol": "FINNIFTY30JUN2622900PE",
     "name": "FINNIFTY",
     "expiry": "2026-06-30",
     "strike": "22900",
@@ -3922,7 +3922,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -3948,7 +3948,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -3974,7 +3974,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -4000,7 +4000,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -4013,7 +4013,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -4026,7 +4026,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -4035,6 +4035,19 @@
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "16000",
+    "lotSize": "120",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "54671",
+    "symbol": "MIDCPNIFTY30JUN2615950PE",
+    "name": "MIDCPNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "15950",
     "lotSize": "120",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -4056,11 +4069,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "54671",
-    "symbol": "MIDCPNIFTY30JUN2615950PE",
+    "token": "53814",
+    "symbol": "MIDCPNIFTY30JUN2615925PE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
-    "strike": "15950",
+    "strike": "15925",
     "lotSize": "120",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -4078,15 +4091,15 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "53814",
-    "symbol": "MIDCPNIFTY30JUN2615925PE",
+    "token": "78825",
+    "symbol": "MIDCPNIFTY30JUN2615900PE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
-    "strike": "15925",
+    "strike": "15900",
     "lotSize": "120",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -4108,19 +4121,6 @@
     "exchangeType": "2"
   },
   {
-    "token": "78825",
-    "symbol": "MIDCPNIFTY30JUN2615900PE",
-    "name": "MIDCPNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "15900",
-    "lotSize": "120",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
     "token": "53811",
     "symbol": "MIDCPNIFTY30JUN2615875CE",
     "name": "MIDCPNIFTY",
@@ -4130,7 +4130,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -4143,7 +4143,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -4169,12 +4169,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "53808",
-    "symbol": "MIDCPNIFTY30JUN2615825PE",
+    "token": "53807",
+    "symbol": "MIDCPNIFTY30JUN2615825CE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "15825",
@@ -4182,12 +4182,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
-    "token": "53807",
-    "symbol": "MIDCPNIFTY30JUN2615825CE",
+    "token": "53808",
+    "symbol": "MIDCPNIFTY30JUN2615825PE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "15825",
@@ -4221,6 +4221,19 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "52010",
+    "symbol": "MIDCPNIFTY30JUN2615775CE",
+    "name": "MIDCPNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "15775",
+    "lotSize": "120",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
     "option type": "CE",
     "exchangeType": "2"
   },
@@ -4238,11 +4251,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "52010",
-    "symbol": "MIDCPNIFTY30JUN2615775CE",
+    "token": "52009",
+    "symbol": "MIDCPNIFTY30JUN2615750PE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
-    "strike": "15775",
+    "strike": "15750",
     "lotSize": "120",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -4260,20 +4273,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "52009",
-    "symbol": "MIDCPNIFTY30JUN2615750PE",
-    "name": "MIDCPNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "15750",
-    "lotSize": "120",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -4299,12 +4299,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
-    "token": "78808",
-    "symbol": "MIDCPNIFTY30JUN2615700PE",
+    "token": "78807",
+    "symbol": "MIDCPNIFTY30JUN2615700CE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "15700",
@@ -4316,8 +4316,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "78807",
-    "symbol": "MIDCPNIFTY30JUN2615700CE",
+    "token": "78808",
+    "symbol": "MIDCPNIFTY30JUN2615700PE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "15700",
@@ -4338,7 +4338,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -4355,8 +4355,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "49284",
-    "symbol": "MIDCPNIFTY30JUN2615650PE",
+    "token": "49281",
+    "symbol": "MIDCPNIFTY30JUN2615650CE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "15650",
@@ -4368,8 +4368,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "49281",
-    "symbol": "MIDCPNIFTY30JUN2615650CE",
+    "token": "49284",
+    "symbol": "MIDCPNIFTY30JUN2615650PE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "15650",
@@ -4390,7 +4390,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -4416,7 +4416,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -4442,7 +4442,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -4485,19 +4485,6 @@
     "exchangeType": "2"
   },
   {
-    "token": "49274",
-    "symbol": "MIDCPNIFTY30JUN2615525PE",
-    "name": "MIDCPNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "15525",
-    "lotSize": "120",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
     "token": "49271",
     "symbol": "MIDCPNIFTY30JUN2615525CE",
     "name": "MIDCPNIFTY",
@@ -4511,6 +4498,19 @@
     "exchangeType": "2"
   },
   {
+    "token": "49274",
+    "symbol": "MIDCPNIFTY30JUN2615525PE",
+    "name": "MIDCPNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "15525",
+    "lotSize": "120",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
     "token": "78799",
     "symbol": "MIDCPNIFTY30JUN2615500CE",
     "name": "MIDCPNIFTY",
@@ -4520,7 +4520,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -4559,7 +4559,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -4572,7 +4572,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -4581,6 +4581,19 @@
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "15450",
+    "lotSize": "120",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "40782",
+    "symbol": "MIDCPNIFTY30JUN2615425PE",
+    "name": "MIDCPNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "15425",
     "lotSize": "120",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -4598,20 +4611,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "40782",
-    "symbol": "MIDCPNIFTY30JUN2615425PE",
-    "name": "MIDCPNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "15425",
-    "lotSize": "120",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -4624,7 +4624,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -4654,8 +4654,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "78525",
-    "symbol": "MIDCPNIFTY30JUN2613350PE",
+    "token": "78524",
+    "symbol": "MIDCPNIFTY30JUN2613350CE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "13350",
@@ -4667,8 +4667,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "78524",
-    "symbol": "MIDCPNIFTY30JUN2613350CE",
+    "token": "78525",
+    "symbol": "MIDCPNIFTY30JUN2613350PE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "13350",
@@ -4676,7 +4676,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -4702,19 +4702,6 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "78521",
-    "symbol": "MIDCPNIFTY30JUN2613300PE",
-    "name": "MIDCPNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "13300",
-    "lotSize": "120",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
     "option type": "CE",
     "exchangeType": "2"
   },
@@ -4728,7 +4715,20 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "78521",
+    "symbol": "MIDCPNIFTY30JUN2613300PE",
+    "name": "MIDCPNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "13300",
+    "lotSize": "120",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -4754,12 +4754,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
-    "token": "78502",
-    "symbol": "MIDCPNIFTY30JUN2613250CE",
+    "token": "78504",
+    "symbol": "MIDCPNIFTY30JUN2613250PE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "13250",
@@ -4767,12 +4767,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "78504",
-    "symbol": "MIDCPNIFTY30JUN2613250PE",
+    "token": "78502",
+    "symbol": "MIDCPNIFTY30JUN2613250CE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "13250",
@@ -4819,7 +4819,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -4832,20 +4832,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "78488",
-    "symbol": "MIDCPNIFTY30JUN2613175PE",
-    "name": "MIDCPNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "13175",
-    "lotSize": "120",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -4862,11 +4849,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "78485",
-    "symbol": "MIDCPNIFTY30JUN2613150CE",
+    "token": "78488",
+    "symbol": "MIDCPNIFTY30JUN2613175PE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
-    "strike": "13150",
+    "strike": "13175",
     "lotSize": "120",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -4888,8 +4875,21 @@
     "exchangeType": "2"
   },
   {
-    "token": "78484",
-    "symbol": "MIDCPNIFTY30JUN2613125PE",
+    "token": "78485",
+    "symbol": "MIDCPNIFTY30JUN2613150CE",
+    "name": "MIDCPNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "13150",
+    "lotSize": "120",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "78483",
+    "symbol": "MIDCPNIFTY30JUN2613125CE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "13125",
@@ -4901,8 +4901,8 @@
     "exchangeType": "2"
   },
   {
-    "token": "78483",
-    "symbol": "MIDCPNIFTY30JUN2613125CE",
+    "token": "78484",
+    "symbol": "MIDCPNIFTY30JUN2613125PE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "13125",
@@ -4923,7 +4923,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -4936,7 +4936,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -4949,7 +4949,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -4958,6 +4958,19 @@
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "13075",
+    "lotSize": "120",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "78478",
+    "symbol": "MIDCPNIFTY30JUN2613050PE",
+    "name": "MIDCPNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "13050",
     "lotSize": "120",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -4979,16 +4992,16 @@
     "exchangeType": "2"
   },
   {
-    "token": "78478",
-    "symbol": "MIDCPNIFTY30JUN2613050PE",
+    "token": "78475",
+    "symbol": "MIDCPNIFTY30JUN2613025CE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
-    "strike": "13050",
+    "strike": "13025",
     "lotSize": "120",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -5005,19 +5018,6 @@
     "exchangeType": "2"
   },
   {
-    "token": "78475",
-    "symbol": "MIDCPNIFTY30JUN2613025CE",
-    "name": "MIDCPNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "13025",
-    "lotSize": "120",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
     "token": "78389",
     "symbol": "MIDCPNIFTY30JUN2613000CE",
     "name": "MIDCPNIFTY",
@@ -5027,7 +5027,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -5053,7 +5053,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -5062,19 +5062,6 @@
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "12975",
-    "lotSize": "120",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "CE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "78386",
-    "symbol": "MIDCPNIFTY30JUN2612950PE",
-    "name": "MIDCPNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "12950",
     "lotSize": "120",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -5093,6 +5080,19 @@
     "exchange": "NFO",
     "segment": "5",
     "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
+    "token": "78386",
+    "symbol": "MIDCPNIFTY30JUN2612950PE",
+    "name": "MIDCPNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "12950",
+    "lotSize": "120",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
@@ -5118,12 +5118,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
-    "token": "78374",
-    "symbol": "MIDCPNIFTY30JUN2612900PE",
+    "token": "78373",
+    "symbol": "MIDCPNIFTY30JUN2612900CE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "12900",
@@ -5131,12 +5131,12 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   },
   {
-    "token": "78373",
-    "symbol": "MIDCPNIFTY30JUN2612900CE",
+    "token": "78374",
+    "symbol": "MIDCPNIFTY30JUN2612900PE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "12900",
@@ -5170,7 +5170,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -5209,7 +5209,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -5218,19 +5218,6 @@
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
     "strike": "12825",
-    "lotSize": "120",
-    "instrumentType": "OPTIDX",
-    "exchange": "NFO",
-    "segment": "5",
-    "option type": "PE",
-    "exchangeType": "2"
-  },
-  {
-    "token": "78365",
-    "symbol": "MIDCPNIFTY30JUN2612800CE",
-    "name": "MIDCPNIFTY",
-    "expiry": "2026-06-30",
-    "strike": "12800",
     "lotSize": "120",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -5252,11 +5239,11 @@
     "exchangeType": "2"
   },
   {
-    "token": "78364",
-    "symbol": "MIDCPNIFTY30JUN2612775PE",
+    "token": "78365",
+    "symbol": "MIDCPNIFTY30JUN2612800CE",
     "name": "MIDCPNIFTY",
     "expiry": "2026-06-30",
-    "strike": "12775",
+    "strike": "12800",
     "lotSize": "120",
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
@@ -5278,6 +5265,19 @@
     "exchangeType": "2"
   },
   {
+    "token": "78364",
+    "symbol": "MIDCPNIFTY30JUN2612775PE",
+    "name": "MIDCPNIFTY",
+    "expiry": "2026-06-30",
+    "strike": "12775",
+    "lotSize": "120",
+    "instrumentType": "OPTIDX",
+    "exchange": "NFO",
+    "segment": "5",
+    "option type": "PE",
+    "exchangeType": "2"
+  },
+  {
     "token": "78341",
     "symbol": "MIDCPNIFTY30JUN2612750CE",
     "name": "MIDCPNIFTY",
@@ -5287,7 +5287,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "CE",
+    "option type": "PE",
     "exchangeType": "2"
   },
   {
@@ -5300,7 +5300,7 @@
     "instrumentType": "OPTIDX",
     "exchange": "NFO",
     "segment": "5",
-    "option type": "PE",
+    "option type": "CE",
     "exchangeType": "2"
   }
 ]
